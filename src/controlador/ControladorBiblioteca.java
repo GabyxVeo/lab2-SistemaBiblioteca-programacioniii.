@@ -27,6 +27,7 @@ public class ControladorBiblioteca {
         usuarios.add(new Estudiante("Luis Perez", "20231235", "Ing. Software"));
         usuarios.add(new Docente("Marta Diaz", "D-001", "Ingenieria"));
         usuarios.add(new Docente("Jose Andres", "PM-69686-25","Ing. Sistemas y Computacion"));
+        usuarios.add(new Docente("Oscar Alvarez","CA-12675-25","Ing. Sistemas y Computacion"));
 
         // UPCASTING A INTERFAZ: un Libro y una Revista se guardan como Prestable
         catalogo.add(new Libro("Java Como Programar", "Deitel"));
