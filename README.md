@@ -47,5 +47,10 @@ Descargar la carpeta, luego abrir la carpeta en su IDE de preferencia y ejecutar
 
 
 ## Uso de herramientas de IA
+Qué herramientas se utilizaron:Gemini.
+
+*Para qué se utilizaron: Exclusivamente como apoyo técnico para organizar la estructura de carpetas y paquetes del proyecto bajo el patrón arquitectónico MVC (Modelo-Vista-Controlador).
+
+*Cómo se validó y corrigió el resultado: El equipo verificó manualmente que la distribución de las clases en los paquetes (modelo, vista, controlador, main) cumpliera con las convenciones de Java y garantizara la correcta compilación del sistema localmente.
 
 
