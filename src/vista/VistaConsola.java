@@ -5,7 +5,6 @@ import java.util.Scanner;
 import modelo.Prestable;
 import modelo.Usuario;
 
-// VISTA: solo muestra datos y lee lo que escribe el usuario. No tiene lógica de negocio.
 public class VistaConsola {
     private Scanner scanner = new Scanner(System.in);
 
@@ -39,7 +38,7 @@ public class VistaConsola {
         }
     }
 
-    // POLIMORFISMO con interfaz: la lista es de Prestable, no de Libro ni de Revista.
+
     public void mostrarCatalogo(ArrayList<Prestable> catalogo) {
         System.out.println("--- Catalogo ---");
         for (int i = 0; i < catalogo.size(); i++) {
@@ -53,8 +52,7 @@ public class VistaConsola {
         System.out.println("--- Usuarios ---");
         for (int i = 0; i < usuarios.size(); i++) {
             Usuario usuario = usuarios.get(i);
-            // LIGADURA DINÁMICA: presentarse() y getLimitePrestamos() dependen del objeto real
-            // (Estudiante o Docente), aunque la variable sea de tipo Usuario.
+
             System.out.println((i + 1) + ". " + usuario.presentarse()
                     + " | Prestamos: " + usuario.getCantidadPrestados()
                     + "/" + usuario.getLimitePrestamos());

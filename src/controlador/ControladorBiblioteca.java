@@ -9,7 +9,7 @@ import modelo.Revista;
 import modelo.Usuario;
 import vista.VistaConsola;
 
-// CONTROLADOR: conecta la vista con el modelo. Aquí viven las listas.
+
 public class ControladorBiblioteca {
     private ArrayList<Usuario> usuarios = new ArrayList<>();
     private ArrayList<Prestable> catalogo = new ArrayList<>();
@@ -20,16 +20,19 @@ public class ControladorBiblioteca {
         cargarDatosIniciales();
     }
 
-    // Datos "quemados" para que el sistema funcione de inmediato.
+
     private void cargarDatosIniciales() {
-        // UPCASTING: guardamos un Estudiante y un Docente en una lista de tipo Usuario
-        usuarios.add(new Estudiante("Ana Lopez", "20231234", "Ing. Software"));
-        usuarios.add(new Estudiante("Luis Perez", "20231235", "Ing. Software"));
+
+        usuarios.add(new Estudiante("William Alfaro", "20231234", "Ing. Software"));
+        usuarios.add(new Estudiante("Chelsea Castellanos", "20231235", "Ing. Software"));
+        usuarios.add(new Estudiante("Jonathan Mercado", "MM-69751-25", "Ing. Sitemas y computacion"));
+        usuarios.add(new Estudiante("Aldo Portillo", "MP-67677-25", "Ciencias y Tecnologia"));
+
         usuarios.add(new Docente("Marta Diaz", "D-001", "Ingenieria"));
         usuarios.add(new Docente("Jose Andres", "PM-69686-25","Ing. Sistemas y Computacion"));
         usuarios.add(new Docente("Oscar Alvarez","CA-12675-25","Ing. Sistemas y Computacion"));
 
-        // UPCASTING A INTERFAZ: un Libro y una Revista se guardan como Prestable
+
         catalogo.add(new Libro("Java Como Programar", "Deitel"));
         catalogo.add(new Libro("Clean Code", "Robert Martin"));
         catalogo.add(new Revista("Revista Tecnologia", 45));
@@ -64,7 +67,7 @@ public class ControladorBiblioteca {
         vista.mostrarUsuarios(usuarios);
         Usuario usuario = buscarUsuario(vista.leerEntero("Numero de usuario: "));
         vista.mostrarCatalogo(catalogo);
-        // Se llama la versión que recibe int (ver SOBRECARGA #2 abajo)
+
         Prestable recurso = buscarRecurso(vista.leerEntero("Numero de recurso: "));
 
         if (usuario == null || recurso == null) {
@@ -72,7 +75,7 @@ public class ControladorBiblioteca {
         } else if (!usuario.puedePrestar()) {
             vista.mostrarMensaje(usuario.getNombre() + " llego a su limite de "
                     + usuario.getLimitePrestamos() + " prestamos.");
-        } else if (recurso.prestar()) { // LIGADURA DINÁMICA: prestar() de Libro o de Revista
+        } else if (recurso.prestar()) {
             usuario.agregarPrestamo(recurso);
             vista.mostrarMensaje("Prestamo exitoso. Debe devolverlo en "
                     + recurso.getDiasPrestamo() + " dias.");
@@ -90,7 +93,7 @@ public class ControladorBiblioteca {
         if (usuario == null || recurso == null) {
             vista.mostrarMensaje("Numero invalido.");
         } else if (usuario.tienePrestado(recurso)) {
-            recurso.devolver(); // LIGADURA DINÁMICA: devolver() del objeto real
+            recurso.devolver();
             usuario.quitarPrestamo(recurso);
             vista.mostrarMensaje("Devolucion exitosa.");
         } else {
@@ -100,7 +103,7 @@ public class ControladorBiblioteca {
 
     private void buscarPorTitulo() {
         String titulo = vista.leerTexto("Titulo a buscar: ");
-        // Se llama la versión que recibe String (ver SOBRECARGA #2 abajo)
+
         Prestable recurso = buscarRecurso(titulo);
         if (recurso == null) {
             vista.mostrarMensaje("No se encontro ningun recurso.");
@@ -117,8 +120,7 @@ public class ControladorBiblioteca {
         }
     }
 
-    // SOBRECARGA (overloading) #2: mismo nombre buscarRecurso, parámetros distintos.
-    // El compilador elige la versión según el tipo del argumento (int o String).
+
     private Prestable buscarRecurso(int numero) {
         if (numero >= 1 && numero <= catalogo.size()) {
             return catalogo.get(numero - 1);
@@ -127,7 +129,7 @@ public class ControladorBiblioteca {
         }
     }
 
-    // SOBRECARGA (overloading) #2: versión que busca por título (String)
+
     private Prestable buscarRecurso(String titulo) {
         for (Prestable recurso : catalogo) {
             if (recurso.getTitulo().toLowerCase().contains(titulo.toLowerCase())) {
