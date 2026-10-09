@@ -1,21 +1,21 @@
 # Laboratorio 2 - Programación III - Sistema de Biblioteca
 
-**Equipo:** [NOMBRE DEL EQUIPO]
+**Equipo:** IDK-TEAM
 
 ## Integrantes y participación (coevaluación, escala independiente 0%-100%)
 
 | Integrante | Carnet | Participación | Concepto que defiende |
 |---|---|---|---|
-| Aldo Gabriel Portillo Martinez | PM-69686-25 | 25% | Herencia / superclase |
-| [Nombre completo 2] | [carnet] | [__%] | Clase abstracta |
-| [Nombre completo 3] | [carnet] | [__%] | Polimorfismo: sobrecarga |
-| [Nombre completo 4] | [carnet] | [__%] | Polimorfismo: sobrescritura |
-| [Nombre completo 5] | [carnet] | [__%] | Interfaz Prestable |
+| Jonathan Remberto Mercado Monge | MM-69751-25 | 20% | Herencia / superclase |
+| Aldo Gabriel Portillo Martinez | PM-69686-25  | 20% | Clase abstracta |
+| Denys Fernando Garcia Alvarado | GA-69750-25 | 20% | Polimorfismo: sobrecarga |
+| Jose Andres Estrada Martinez | EM-69723-25 | 20%  | Polimorfismo: sobrescritura |
+| Chelsea Guadalupe Castellanos Hernandez | CH-69772-25 | 5% | Interfaz Prestable |
+| William Alejandro Alfaro Videz | AV-69833-25 | 5% | Interfaz Prestable |
 
 ## Descripción
 
 Sistema de gestión de biblioteca por consola (Java puro, patrón MVC).
-Evolución desde el Laboratorio I: se agregó una jerarquía de herencia,
 una clase abstracta, polimorfismo (sobrecarga y sobrescritura) y una interfaz propia.
 
 | Concepto | Dónde está |
@@ -36,16 +36,15 @@ src/
   main/          Main
 ```
 
-## Cómo compilar y ejecutar (JDK 11 o superior)
+## Cómo compilar y ejecutar (JDK 21)
 
 Desde la carpeta raíz del proyecto:
 
 ```
-javac -d out src/modelo/*.java src/vista/*.java src/controlador/*.java src/main/*.java
-java -cp out main.Main
+Descargar la carpeta, luego abrir la carpeta en su IDE de preferencia y ejecutar el archivo llamado "Main"
 ```
 
-O desde el IDE: abrir la carpeta, marcar `src` como Sources Root y ejecutar la clase `main.Main`.
+
 
 ## Uso de herramientas de IA
 
