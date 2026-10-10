@@ -10,7 +10,6 @@ public class Recurso {
         this.disponible = true;
     }
 
-
     public String getTitulo() {
         return titulo;
     }
@@ -26,7 +25,6 @@ public class Recurso {
             return "Prestado";
         }
     }
-
 
     @Override
     public String toString() {

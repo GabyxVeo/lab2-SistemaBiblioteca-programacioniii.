@@ -20,7 +20,6 @@ public class ControladorBiblioteca {
         cargarDatosIniciales();
     }
 
-
     private void cargarDatosIniciales() {
 
         usuarios.add(new Estudiante("William Alfaro", "20231234", "Ing. Software"));

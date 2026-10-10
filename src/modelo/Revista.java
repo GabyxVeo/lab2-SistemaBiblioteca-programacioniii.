@@ -9,7 +9,6 @@ public class Revista extends Recurso implements Prestable {
         this.edicion = edicion;
     }
 
-
     @Override
     public boolean prestar() {
         if (disponible) {
@@ -25,12 +24,10 @@ public class Revista extends Recurso implements Prestable {
         disponible = true;
     }
 
-
     @Override
     public int getDiasPrestamo() {
         return 3;
     }
-
 
     @Override
     public String toString() {
