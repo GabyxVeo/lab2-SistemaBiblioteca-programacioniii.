@@ -6,12 +6,12 @@
 
 | Integrante | Carnet | Participación | Concepto que defiende |
 |---|---|---|---|
-| Jonathan Remberto Mercado Monge | MM-69751-25 | 20% | Herencia / superclase |
-| Aldo Gabriel Portillo Martinez | PM-69686-25  | 20% | Clase abstracta |
-| Denys Fernando Garcia Alvarado | GA-69750-25 | 20% | Polimorfismo: sobrecarga |
-| Jose Andres Estrada Martinez | EM-69723-25 | 20%  | Polimorfismo: sobrescritura |
-| Chelsea Guadalupe Castellanos Hernandez | CH-69772-25 | 5% | Interfaz Prestable |
-| William Alejandro Alfaro Videz | AV-69833-25 | 5% | Interfaz Prestable |
+| Jonathan Remberto Mercado Monge | MM-69751-25 | 100% | Herencia / superclase |
+| Aldo Gabriel Portillo Martinez | PM-69686-25  | 100% | Clase abstracta |
+| Denys Fernando Garcia Alvarado | GA-69750-25 | 100% | Polimorfismo: sobrecarga |
+| Jose Andres Estrada Martinez | EM-69723-25 | 100%  | Polimorfismo: sobrescritura |
+| Chelsea Guadalupe Castellanos Hernandez | CH-69772-25 | 100% | Interfaz Prestable |
+| William Alejandro Alfaro Videz | AV-69833-25 | 100% | Interfaz Prestable |
 
 ## Descripción
 
