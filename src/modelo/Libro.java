@@ -1,14 +1,12 @@
 package modelo;
 
-
 public class Libro extends Recurso implements Prestable {
     private String autor;
 
     public Libro(String titulo, String autor) {
-        super(titulo); // super(): construye primero la parte heredada (Recurso)
+        super(titulo);
         this.autor = autor;
     }
-
 
     @Override
     public boolean prestar() {
@@ -20,18 +18,15 @@ public class Libro extends Recurso implements Prestable {
         }
     }
 
-
     @Override
     public void devolver() {
         disponible = true;
     }
 
-
     @Override
     public int getDiasPrestamo() {
         return 14;
     }
-
 
     @Override
     public String toString() {

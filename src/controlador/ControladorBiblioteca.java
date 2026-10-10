@@ -120,7 +120,6 @@ public class ControladorBiblioteca {
         }
     }
 
-
     private Prestable buscarRecurso(int numero) {
         if (numero >= 1 && numero <= catalogo.size()) {
             return catalogo.get(numero - 1);
@@ -128,7 +127,6 @@ public class ControladorBiblioteca {
             return null;
         }
     }
-
 
     private Prestable buscarRecurso(String titulo) {
         for (Prestable recurso : catalogo) {
