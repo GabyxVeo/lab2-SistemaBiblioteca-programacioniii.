@@ -36,6 +36,18 @@ public class ControladorBiblioteca {
         catalogo.add(new Libro("Clean Code", "Robert Martin"));
         catalogo.add(new Revista("Revista Tecnologia", 45));
         catalogo.add(new Revista("Ciencia Hoy", 12));
+        catalogo.add(new Libro("El lenguaje de programación Java", "Ken Arnold"));
+        catalogo.add(new Libro("Fundamentos de Java", "Herbert Schildt"));
+        catalogo.add(new Libro("Java para principiantes", "John Pollock"));
+        catalogo.add(new Libro("Introducción a la programación", "Luis Joyanes Aguilar"));
+        catalogo.add(new Libro("Estructuras de datos", "Mark Allen Weiss"));
+        catalogo.add(new Libro("Algoritmos y programación", "Thomas H. Cormen"));
+        catalogo.add(new Libro("Patrones de diseño", "Erich Gamma"));
+        catalogo.add(new Libro("Código completo", "Steve McConnell"));
+        catalogo.add(new Libro("El programador pragmático", "Andrew Hunt"));
+        catalogo.add(new Libro("Refactoring", "Martin Fowler"));
+        catalogo.add(new Libro("Python Crash Course", "Eric Matthes"));
+        catalogo.add(new Libro("Aprendiendo Git", "Anna Skoulikari"));
     }
 
     public void iniciar() {
